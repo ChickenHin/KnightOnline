@@ -6,43 +6,43 @@
 name: "Build all (MSBuild)"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    # This specifically builds when anything relating to a build changes.
-    # Everything else can be ignored.
-    paths:
-      - '.github/workflows/build_msbuild_all.yml'
-      - '**/*.props'
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
-      - '**/*.vcxproj'
-      - 'deps/**'
-      - 'All.slnx'
-      - 'ThirdParty.slnx'
+  #   # This specifically builds when anything relating to a build changes.
+  #   # Everything else can be ignored.
+  #   paths:
+  #     - '.github/workflows/build_msbuild_all.yml'
+  #     - '**/*.props'
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
+  #     - '**/*.vcxproj'
+  #     - 'deps/**'
+  #     - 'All.slnx'
+  #     - 'ThirdParty.slnx'
 
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    # This specifically builds when anything relating to a build changes.
-    # Everything else can be ignored.
-    paths:
-      - '.github/workflows/build_msbuild_all.yml'
-      - '**/*.props'
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
-      - '**/*.vcxproj'
-      - 'deps/**'
-      - 'All.slnx'
-      - 'ThirdParty.slnx'
+  #   # This specifically builds when anything relating to a build changes.
+  #   # Everything else can be ignored.
+  #   paths:
+  #     - '.github/workflows/build_msbuild_all.yml'
+  #     - '**/*.props'
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
+  #     - '**/*.vcxproj'
+  #     - 'deps/**'
+  #     - 'All.slnx'
+  #     - 'ThirdParty.slnx'
 
-  merge_group: 
+  # merge_group: 
   workflow_dispatch:
 
 concurrency:
