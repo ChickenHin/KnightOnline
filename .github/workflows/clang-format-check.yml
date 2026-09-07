@@ -1,27 +1,27 @@
 name: "clang-format-check"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    paths:
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
+  #   paths:
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
       
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    paths:
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
+  #   paths:
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
 
-  merge_group: 
+  # merge_group: 
   workflow_dispatch:
 
 concurrency:
