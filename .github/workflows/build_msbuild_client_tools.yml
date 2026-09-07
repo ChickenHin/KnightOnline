@@ -6,21 +6,21 @@
 name: "Build client tools (MSBuild)"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_client_tools.yml'
-      - 'ClientTools.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_client_tools.yml'
+  #     - 'ClientTools.slnx'
 
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_client_tools.yml'
-      - 'ClientTools.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_client_tools.yml'
+  #     - 'ClientTools.slnx'
  
   workflow_dispatch:
 
