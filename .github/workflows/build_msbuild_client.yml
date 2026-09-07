@@ -6,21 +6,21 @@
 name: "Build client (MSBuild)"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_client.yml'
-      - 'Client.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_client.yml'
+  #     - 'Client.slnx'
 
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_client.yml'
-      - 'Client.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_client.yml'
+  #     - 'Client.slnx'
 
   workflow_dispatch:
 
