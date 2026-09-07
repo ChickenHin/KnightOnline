@@ -6,21 +6,21 @@
 name: "Build server (MSBuild)"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_server.yml'
-      - 'Server.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_server.yml'
+  #     - 'Server.slnx'
 
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    paths:
-      - '.github/workflows/build_msbuild_server.yml'
-      - 'Server.slnx'
+  #   paths:
+  #     - '.github/workflows/build_msbuild_server.yml'
+  #     - 'Server.slnx'
 
   workflow_dispatch:
 
