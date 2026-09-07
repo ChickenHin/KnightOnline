@@ -6,35 +6,35 @@
 name: "Build all (CMake)"
 
 on:
-  push:
-    branches:
-    - master
+  # push:
+  #   branches:
+  #   - master
 
-    # This specifically builds when anything relating to a build changes.
-    # Everything else can be ignored.
-    paths:
-      - '.github/workflows/build_cmake_all.yml'
-      - '**/CMakeLists.txt'
-      - '**/*.cmake'
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
+  #   # This specifically builds when anything relating to a build changes.
+  #   # Everything else can be ignored.
+  #   paths:
+  #     - '.github/workflows/build_cmake_all.yml'
+  #     - '**/CMakeLists.txt'
+  #     - '**/*.cmake'
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
 
-  pull_request:
-    branches:
-    - master
+  # pull_request:
+  #   branches:
+  #   - master
 
-    # This specifically builds when anything relating to a build changes.
-    # Everything else can be ignored.
-    paths:
-      - '.github/workflows/build_cmake_all.yml'
-      - '**/CMakeLists.txt'
-      - '**/*.cmake'
-      - '**/*.cpp'
-      - '**/*.h'
-      - '**/*.hpp'
-      - '**/*.inl'
+  #   # This specifically builds when anything relating to a build changes.
+  #   # Everything else can be ignored.
+  #   paths:
+  #     - '.github/workflows/build_cmake_all.yml'
+  #     - '**/CMakeLists.txt'
+  #     - '**/*.cmake'
+  #     - '**/*.cpp'
+  #     - '**/*.h'
+  #     - '**/*.hpp'
+  #     - '**/*.inl'
 
   workflow_dispatch:
 
